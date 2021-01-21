@@ -15,4 +15,21 @@ public class BankAccount {
 	}
 
 	
+	
+	
+	 public int withdraw() {
+		System.out.println("Your Balance=" + bal);
+		System.out.print("Enter amount to withdraw:");
+		amt = input.nextInt();
+		if (bal < amt) {
+			System.out.println("Not sufficient balance.");
+			return 1;
+		}
+		if (amt < 0) {
+			System.out.println("Invalid Amount");
+			return 1;
+		}
+		bal = bal - amt;
+		return 0;
+	}
 }
