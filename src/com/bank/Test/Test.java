@@ -29,7 +29,9 @@ public class Test {
 			menu = input.nextInt();
 			switch (menu) {
 
-		
+			case 1:
+				b1.deposit();
+				break;
 			}
 		} while (!quit);
 	}

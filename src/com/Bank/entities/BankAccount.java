@@ -13,6 +13,15 @@ public class BankAccount {
 		this.actype = actype;
 		this.bal = bal;
 	}
-
+	 public int deposit() {
+		System.out.print("Enter amount to deposit:");
+		amt = input.nextInt();
+		if (amt < 0) {
+			System.out.println("Invalid Amount");
+			return 1;
+		}
+		bal = bal + amt;
+		return 0;
+	}
 	
 }
