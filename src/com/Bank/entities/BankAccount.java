@@ -13,6 +13,34 @@ public class BankAccount {
 		this.actype = actype;
 		this.bal = bal;
 	}
+	 public int deposit() {
+			System.out.print("Enter amount to deposit:");
+			amt = input.nextInt();
+			if (amt < 0) {
+				System.out.println("Invalid Amount");
+				return 1;
+			}
+			bal = bal + amt;
+			return 0;
+		}
+		
+		
+		
+		 public int withdraw() {
+			System.out.println("Your Balance=" + bal);
+			System.out.print("Enter amount to withdraw:");
+			amt = input.nextInt();
+			if (bal < amt) {
+				System.out.println("Not sufficient balance.");
+				return 1;
+			}
+			if (amt < 0) {
+				System.out.println("Invalid Amount");
+				return 1;
+			}
+			bal = bal - amt;
+			return 0;
+		}
 	public void display() {
 		System.out.println("Name:" + name);
 		System.out.println("Account No:" + accNo);
