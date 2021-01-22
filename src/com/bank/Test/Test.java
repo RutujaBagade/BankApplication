@@ -28,12 +28,13 @@ public class Test {
 			System.out.print("Please enter your choice: ");
 			menu = input.nextInt();
 			switch (menu) {
-			case 2:
-				b1.withdraw();
+			
+			case 3:
+				b1.display();
 				break;
 
-			case 1:
-				b1.deposit();
+			case 4:
+				quit = true;
 				break;
 			}
 		} while (!quit);
